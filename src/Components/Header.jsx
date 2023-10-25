@@ -85,7 +85,7 @@ const Header = () => {
           {/* menu button starts  */}
           <div
             onClick={() => setOpenMenu(true)}
-            className=" w-[50px] h-full flex items-end flex-col gap-[5px] justify-center lg:hidden rotate-[-45deg] translate-x-[10%] translate-y-[10%]"
+            className=" w-[50px] h-full flex items-end flex-col gap-[5px] justify-center lg:hidden rotate-[-45deg] translate-x-[10%] translate-y-[10%] cursor-pointer"
           >
             <m.div
               animate={

@@ -82,13 +82,26 @@ const Hero = () => {
         </div>
         {/* text div ends */}
         {/* <image div starts  */}
-        <div className="h-[75%]  overflow-hidden lg:h-full lg:w-[45%] relative z-[99]">
+        <m.div
+          initial={{
+            scale: 0,
+          }}
+          animate={{
+            scale: [0, 1.2, 1],
+            transition: {
+              delay: 1.1,
+              type: "tween",
+              duration: 0.6,
+            },
+          }}
+          className="h-[75%]  overflow-hidden lg:h-full lg:w-[45%] relative z-[99]"
+        >
           <img
             src={spaceboy}
             alt=""
             className="w-full h-full object-cover md:object-fill lg:object-fill    lg:translate-y-[10%]"
           />
-        </div>
+        </m.div>
         {/* <image div ends */}
         <div className="w-[400px] h-[400px] rounded-full blur-[200px]  hidden  md:block bg-gradient-to-r from-purple-500 to-violet-500 absolute top-[10vh] right-[20vw]"></div>
       </div>
