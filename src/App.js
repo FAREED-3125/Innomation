@@ -11,7 +11,7 @@ import { Footer } from "./Components/Footer";
 const App = () => {
   useEffect(() => {
     const lenis = new Lenis({
-      wheelMultiplier: 0.3,
+      wheelMultiplier: 0.8,
     });
 
     function raf(time) {
